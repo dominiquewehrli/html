@@ -1,0 +1,11 @@
+
+<!DOCTYPE html>
+<html><head><meta http-equiv='content-type' content='charset=utf-8'>
+<title>SR</title></head>
+<script>
+var q = prompt('Erlass Artikel (z.B. BV 75) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, "");
+document.location = "https://www.fedlex.admin.ch/de/search?collection=classified_compilation&classifiedBy=" + q
+// window.open("https://www.fedlex.admin.ch/de/search?collection=classified_compilation&classifiedBy=" + q);
+// history.back();
+</script>
+</html>
