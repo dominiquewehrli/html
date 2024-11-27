@@ -9,6 +9,11 @@ for (var i = 1; i <= pcnt; i++) {
     imgp.push(i);
 }
 
+document.onkeydown = function (e) {
+if (!e) e = window.event;
+if (e.key == '1') { document.location = "/sr" }
+}
+
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
