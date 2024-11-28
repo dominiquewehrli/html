@@ -1,32 +1,8 @@
-
 <!DOCTYPE html>
-<html><head><meta http-equiv='content-type' content='charset=utf-8'>
-<title>TG</title></head>
-<script>
-
-// EINGABE
-
-var q = prompt('Erlass Artikel (z.B. PBG 17) oder Erlassnummer Artikel (z.B. 700 17). Erlassbezeichnungen werden fortlaufend ergaenzt.').toLowerCase().replace(/ +$/, "");
-if (q == "") { document.location = "https://www.rechtsbuch.tg.ch/app/de/systematic/search" } else 
-{
-
-// ERSETZUNGEN
-
-	q = q.replace("kv", "101").replace("gemg", "131.1").replace("eg zgb", "210.1").replace("archivg", "432.10").replace("eng", "731.1").replace("tg dsg", "170.7").replace("dsg", "170.7").replace("rsv", "177.112");
-
-	q = q.replace("vrg", "170.1").replace("öffg", "170.6").replace("dsv", "170.71").replace("vgv","631.1");
-	q = q.replace("pbg", "700").replace("pbv", "700.1").replace("ivhb", "700.2").replace("ksv", "700.3").replace("flgg", "913.1");
-	q = q.replace("tg nhg", "450.1").replace("tg nhv", "450.11").replace("nhg", "450.1").replace("nhv", "450.11").replace("usgv", "814.03");
-	q = q.replace("tg waldg", "921.1").replace("tg waldv", "921.11").replace("waldg", "921.1").replace("waldv", "921.11");
-	q = q.replace("wbsng", "721.1").replace("wbg", "721.1").replace("wng", "721.8").replace("wbsnv", "721.11").replace("wbv", "721.11");
-	q = q.replace("strwg", "725.1").replace("strwv", "725.10").replace("göb", "720.1").replace("ivöb", "720.3").replace("fhg", "611.1");
-
-// ABSCHLUSS
-
-q = q.replace(" ", "/art/");
-document.location = "https://www.rechtsbuch.tg.ch/app/de/texts_of_law/" + q
-
-}
-
-</script>
+<html><head>
+<meta http-equiv='content-type' content='charset=utf-8'>
+<title>RB</title>
+<link rel='stylesheet' href='s.css' type='text/css'>
+<script type="text/javascript" src="s.js"></script></head>
+<script>r()</script>
 </html>
