@@ -1,7 +1,7 @@
 var s = ""
 document.onkeydown = function (e) {
   if (!e) e = window.event;
-  if (e.key == 's') { s += "sr" }
+  if (e.key == 's') { s += "/sr" }
   if (e.key == 'r') { document.location = "/rb" }
   if (e.key == 'e') { document.location = "/es" }
   if (e.key == 'b') { document.location = "/bg" }
