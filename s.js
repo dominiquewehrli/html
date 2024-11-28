@@ -6,14 +6,14 @@ document.onkeydown = function (e) {
   if (e.key == 'r') { rb() }
   if (e.key == 'e') { es() }
   if (e.key == 'b') { bg() }
-  if (e.key == 'm') { map() }
+  if (e.key == 'm') { m() }
   if (e.key == 'o') { osm() }
   if (e.key == 'i') { i() }
   if (e.key == 'k') { k() }
 }
 
 function sr () {
-  var q = prompt('Bundesrecht: \nErlass Artikel (z.B. BV 75) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, ""); document.location = "https://www.fedlex.admin.ch/de/search?collection=classified_compilation&classifiedBy=" + q
+  var q = prompt('Bundesrecht: \nErlass Artikel (z.B. BV 75) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, ""); if (q) { document.location = "https://www.fedlex.admin.ch/de/search?collection=classified_compilation&classifiedBy=" + q }
 }
 
 function rb () {
@@ -36,7 +36,7 @@ function bg () {
   var q = prompt('Bundesgericht: \nUrteil des BGer (z.B. 1C_483/2021).').replace(" ", "_").replace(" ", "/"); window.location.href = "https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?lang=de&type=simple_query&query_words=" + q;
 }
 
-function map () {
+function m () {
   document.location = "https://s.geo.admin.ch/unoha5jgibb1"
 }
 
