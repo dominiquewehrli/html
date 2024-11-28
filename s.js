@@ -15,7 +15,7 @@ document.onkeydown = function (e) {
   if (e.key == 'e') { var q = prompt('Entscheidsuche: \nErlass Artikel (z.B. BGB 75).').replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "").replace(/([A-Za-z]+) ([0-9a-z]+)/, "\"Art. $2\" AND \"$2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); document.location = "https://entscheidsuche.ch/search?query=" + q }
   if (e.key == 'b') { var q = prompt('Bundesgericht: \nUrteil des BGer (z.B. 1C_483/2021).').replace(" ", "_").replace(" ", "/"); window.location.href = "https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?lang=de&type=simple_query&query_words=" + q; }
   if (e.key == 'm') { document.location = "https://s.geo.admin.ch/unoha5jgibb1" }
-  if (e.key == 'o') { document.location = "https://osm.org/go/0C1nK84--" }
+  if (e.key == 'o') { var q = prompt('Open Street Map:'); document.location = "https://www.openstreetmap.org/search?query=" +q }
   if (e.key == 'i') { document.location = "https://www.linkedin.com/in/dominiquemarcwehrli/" }
   if (e.key == 'k') { document.location = "/kollektion" }
 }
