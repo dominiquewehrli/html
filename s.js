@@ -13,11 +13,11 @@ document.onkeydown = function (e) {
 }
 
 function s () {
-  var q = prompt('Bundesrecht: \n\nErlass Artikel (z.B. BV 75) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, ""); document.location = "https://www.fedlex.admin.ch/de/search?collection=classified_compilation&classifiedBy=" + q
+  var q = prompt('Bundesrecht: \nErlass Artikel (z.B. BV 75) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, ""); document.location = "https://www.fedlex.admin.ch/de/search?collection=classified_compilation&classifiedBy=" + q
 }
 
 function r () {
-  var q = prompt('Rechtsbuch TG: \n\nErlass Artikel (z.B. PBG 17) oder Erlassnummer Artikel (z.B. 700 17). Erlassbezeichnungen werden fortlaufend ergaenzt.').toLowerCase().replace(/ +$/, ""); if (q == "") { document.location = "https://www.rechtsbuch.tg.ch/app/de/systematic/search" } else {
+  var q = prompt('Rechtsbuch TG: \nErlass Artikel (z.B. PBG 17) oder Erlassnummer Artikel (z.B. 700 17). Erlassbezeichnungen werden fortlaufend ergaenzt.').toLowerCase().replace(/ +$/, ""); if (q == "") { document.location = "https://www.rechtsbuch.tg.ch/app/de/systematic/search" } else {
     q = q.replace("kv", "101").replace("gemg", "131.1").replace("eg zgb", "210.1").replace("archivg", "432.10").replace("eng", "731.1").replace("tg dsg", "170.7").replace("dsg", "170.7").replace("rsv", "177.112");
     q = q.replace("vrg", "170.1").replace("öffg", "170.6").replace("dsv", "170.71").replace("vgv","631.1");
     q = q.replace("pbg", "700").replace("pbv", "700.1").replace("ivhb", "700.2").replace("ksv", "700.3").replace("flgg", "913.1");
@@ -29,7 +29,7 @@ function r () {
 }
 
 function e () {
-  var q = prompt('Entscheidsuche: \n\nErlass Artikel (z.B. BGB 75).').replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "").replace(/([A-Za-z]+) ([0-9a-z]+)/, "\"Art. $2\" AND \"$2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); document.location = "https://entscheidsuche.ch/search?query=" + q
+  var q = prompt('Entscheidsuche: \nErlass Artikel (z.B. BGB 75).').replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "").replace(/([A-Za-z]+) ([0-9a-z]+)/, "\"Art. $2\" AND \"$2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); document.location = "https://entscheidsuche.ch/search?query=" + q
 }
 
 function b () {
