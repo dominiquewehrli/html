@@ -10,7 +10,6 @@ document.onkeydown = function (e) {
   if (e.key == 'o') { osm() }
   if (e.key == 'i') { i() }
   if (e.key == 'k') { k() }
-  if (e.key == 'Space') { k() }
 }
 
 function sr () {
