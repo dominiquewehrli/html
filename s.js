@@ -13,10 +13,9 @@ document.onkeydown = function (e) {
     q = q.replace("strwg", "725.1").replace("strwv", "725.10").replace("göb", "720.1").replace("ivöb", "720.3").replace("fhg", "611.1");
     q = q.replace(" ", "/art/"); document.location = "https://www.rechtsbuch.tg.ch/app/de/texts_of_law/" + q } }
   if (e.key == 'e') { var q = prompt('Erlass Artikel (z.B. BGB 75).').replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "").replace(/([A-Za-z]+) ([0-9a-z]+)/, "\"Art. $2\" AND \"$2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); document.location = "https://entscheidsuche.ch/search?query=" + q }
-  if (e.key == 'b') { if (s == "") { s = "/bg" } }
-  if (e.key == 'm') { if (s == "") { s = "/map" } }
-  if (e.key == 'o') { if (s == "") { s = "/osm" } }
-  if (e.key == 'i') { if (s == "") { s = "/in" } }
-  if (e.key == 'k') { if (s == "") { s = "/kollektion" } }
-  if (e.key == 'Enter') { t = s; s = ""; document.location = t }
+  if (e.key == 'b') { var q = prompt('Urteil des BGer (z.B. 1C_483/2021).').replace(" ", "_").replace(" ", "/"); window.location.href = "https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?lang=de&type=simple_query&query_words=" + q; }
+  if (e.key == 'm') { document.location = "https://s.geo.admin.ch/unoha5jgibb1" }
+  if (e.key == 'o') { document.location = "https://osm.org/go/0C1nK84--" }
+  if (e.key == 'i') { document.location = "https://www.linkedin.com/in/dominiquemarcwehrli/" }
+  if (e.key == 'k') { document.location = "/kollektion" }
 }
