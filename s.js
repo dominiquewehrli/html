@@ -4,7 +4,7 @@ document.onkeydown = function (e) {
   // if (e.key == 's') { if (s == "") { s = "/sr" } }
   if (e.key == 's') { s() }
   if (e.key == 'r') { r() }
-  if (e.key == 'e') { e() }
+  if (e.key == 'e') { es() }
   if (e.key == 'b') { b() }
   if (e.key == 'm') { m() }
   if (e.key == 'o') { o() }
@@ -28,7 +28,7 @@ function r () {
     q = q.replace(" ", "/art/"); document.location = "https://www.rechtsbuch.tg.ch/app/de/texts_of_law/" + q }
 }
 
-function e () {
+function es () {
   var q = prompt('Entscheidsuche: \nErlass Artikel (z.B. BGB 75).').replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "").replace(/([A-Za-z]+) ([0-9a-z]+)/, "\"Art. $2\" AND \"$2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); document.location = "https://entscheidsuche.ch/search?query=" + q
 }
 
