@@ -41,7 +41,7 @@ function m () {
 }
 
 function o () {
-  var q = prompt('Open Street Map:'); document.location = "https://www.openstreetmap.org/search?query=" +q
+  var q = prompt('Open Street Map:').replace(/ +$/, ""); document.location = "https://www.openstreetmap.org/search?query=" + q
 }
 
 function i () {
