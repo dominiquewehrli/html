@@ -12,7 +12,7 @@ document.onkeydown = function (e) {
     q = q.replace("wbsng", "721.1").replace("wbg", "721.1").replace("wng", "721.8").replace("wbsnv", "721.11").replace("wbv", "721.11");
     q = q.replace("strwg", "725.1").replace("strwv", "725.10").replace("göb", "720.1").replace("ivöb", "720.3").replace("fhg", "611.1");
     q = q.replace(" ", "/art/"); document.location = "https://www.rechtsbuch.tg.ch/app/de/texts_of_law/" + q } }
-  if (e.key == 'e') { if (s == "") { s = "/es" } }
+  if (e.key == 'e') { var q = prompt('Erlass Artikel (z.B. BGB 75).').replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "").replace(/([A-Za-z]+) ([0-9a-z]+)/, "\"Art. $2\" AND \"$2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); document.location = "https://entscheidsuche.ch/search?query=" + q }
   if (e.key == 'b') { if (s == "") { s = "/bg" } }
   if (e.key == 'm') { if (s == "") { s = "/map" } }
   if (e.key == 'o') { if (s == "") { s = "/osm" } }
