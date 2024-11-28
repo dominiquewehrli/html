@@ -9,5 +9,5 @@ document.onkeydown = function (e) {
   if (e.key == 'o') { document.location = "/osm" }
   if (e.key == 'i') { document.location = "/in" }
   if (e.key == 'k') { document.location = "/kollektion" }
-  if (e.key == 'enter') { window.open("/k") }
+  if (e.key == 'return') { window.open("/k") }
 }
