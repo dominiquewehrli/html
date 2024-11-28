@@ -2,7 +2,7 @@ echts = ""
 document.onkeydown = function (e) {
   if (!e) e = window.event;
   // if (e.key == 's') { if (s == "") { s = "/sr" } }
-  if (e.key == 's') { var q = prompt('Bundesrecht: \nErlass Artikel (z.B. BV 75) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, ""); document.location = "https://www.fedlex.admin.ch/de/search?collection=classified_compilation&classifiedBy=" + q }
+  if (e.key == 's') { s() }
   if (e.key == 'r') { var q = prompt('Rechtsbuch TG: \nErlass Artikel (z.B. PBG 17) oder Erlassnummer Artikel (z.B. 700 17). Erlassbezeichnungen werden fortlaufend ergaenzt.').toLowerCase().replace(/ +$/, ""); if (q == "") { document.location = "https://www.rechtsbuch.tg.ch/app/de/systematic/search" } else {
     q = q.replace("kv", "101").replace("gemg", "131.1").replace("eg zgb", "210.1").replace("archivg", "432.10").replace("eng", "731.1").replace("tg dsg", "170.7").replace("dsg", "170.7").replace("rsv", "177.112");
     q = q.replace("vrg", "170.1").replace("öffg", "170.6").replace("dsv", "170.71").replace("vgv","631.1");
@@ -18,4 +18,8 @@ document.onkeydown = function (e) {
   if (e.key == 'o') { var q = prompt('Open Street Map:'); document.location = "https://www.openstreetmap.org/search?query=" +q }
   if (e.key == 'i') { document.location = "https://www.linkedin.com/in/dominiquemarcwehrli/" }
   if (e.key == 'k') { document.location = "/kollektion" }
+}
+
+function s () {
+  var q = prompt('Bundesrecht: \nErlass Artikel (z.B. BV 75) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, ""); document.location = "https://www.fedlex.admin.ch/de/search?collection=classified_compilation&classifiedBy=" + q
 }
