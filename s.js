@@ -8,7 +8,7 @@ document.onkeydown = function (e) {
   if (e.key == 'b') { bg() }
   if (e.key == 'm') { map() }
   if (e.key == 'o') { osm() }
-  if (e.key == 'i') { in() }
+  if (e.key == 'i') { lin() }
   if (e.key == 'k') { kollektion() }
 }
 
@@ -49,7 +49,7 @@ function osm () {
   if (q) { document.location = "https://www.openstreetmap.org/search?query=" + q }
 }
 
-function in () {
+function lin () {
   document.location = "https://www.linkedin.com/in/dominiquemarcwehrli/"
 }
 
