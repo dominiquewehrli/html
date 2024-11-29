@@ -6,10 +6,10 @@ document.onkeydown = function (e) {
   if (e.key == 'r') { rb() }
   if (e.key == 'e') { es() }
   if (e.key == 'b') { bg() }
-  if (e.key == 'm') { m() }
+  if (e.key == 'm') { map() }
   if (e.key == 'o') { osm() }
-  if (e.key == 'i') { i() }
-  if (e.key == 'k') { k() }
+  if (e.key == 'i') { in() }
+  if (e.key == 'k') { kollektion() }
 }
 
 function sr () {
@@ -40,7 +40,7 @@ function bg () {
   if (q) { document.location = "https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?lang=de&type=simple_query&query_words=" + q }
 }
 
-function m () {
+function map () {
   document.location = "https://s.geo.admin.ch/unoha5jgibb1"
 }
 
@@ -49,10 +49,10 @@ function osm () {
   if (q) { document.location = "https://www.openstreetmap.org/search?query=" + q }
 }
 
-function i () {
+function in () {
   document.location = "https://www.linkedin.com/in/dominiquemarcwehrli/"
 }
 
-function k () {
+function kollektion () {
   document.location = "/kollektion"
 }
