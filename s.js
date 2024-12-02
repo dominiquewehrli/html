@@ -9,6 +9,7 @@ document.onkeydown = function (e) {
   if (e.key == 'm') { map() }
   if (e.key == 'o') { osm() }
   if (e.key == 'i') { lin() }
+  if (e.key == 't') { st() }
   if (e.key == 'k') { kollektion() }
 }
 
