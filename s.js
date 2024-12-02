@@ -45,6 +45,10 @@ function map () {
   document.location = "https://s.geo.admin.ch/unoha5jgibb1"
 }
 
+function st () {
+  document.location = "https://www.swisstransfer.com/de-ch"
+}
+
 function osm () {
   var q = prompt('Open Street Map:').replace(/ +$/, ""); 
   if (q) { document.location = "https://www.openstreetmap.org/search?query=" + q }
