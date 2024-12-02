@@ -31,7 +31,7 @@ function rb () {
 }
 
 function es () {
-  var q = prompt('Entscheidsuche: \nErlass Artikel (z.B. BGB 75).').replace(" I", "Abs. 1").replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "").replace(/([A-Za-z]+) ([0-9a-z]+)( Abs. [0-9])?/, "\"Art. $2\" AND \"$2 $1$3\"~5").replace(/([0-9])~([0-9])/, "$2"); 
+  var q = prompt('Entscheidsuche: \nErlass Artikel (z.B. BGB 75).').replace(" I", " Abs. 1").replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "").replace(/([A-Za-z]+) ([0-9a-z]+)( Abs. [0-9])?/, "\"Art. $2\" AND \"$2 $1$3\"~5").replace(/([0-9])~([0-9])/, "$2"); 
   if (q) { document.location = "https://entscheidsuche.ch/search?query=" + q }
 }
 
