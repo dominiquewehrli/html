@@ -1,4 +1,3 @@
-echts = ""
 params = new URL(window.location.href)
 s = params.search()
 if (s) { alert(s) }
