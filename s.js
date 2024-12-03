@@ -1,5 +1,7 @@
 echts = ""
-alert(url.search())
+params = new URL(window.location.href)
+s = params.search()
+if (s) { alert(s) }
 
 document.onkeydown = function (e) {
   if (!e) e = window.event;
