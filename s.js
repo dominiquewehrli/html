@@ -1,7 +1,3 @@
-params = new URL(window.location.href)
-s = params.search()
-if (s) { alert(s) }
-
 document.onkeydown = function (e) {
   if (!e) e = window.event;
   // if (e.key == 's') { if (s == "") { s = "/sr" } }
