@@ -53,7 +53,7 @@ function osm () {
 }
 
 function lin () {
-  document.location = "https://www.linkedin.com/in/dominiquemarcwehrli/"
+  document.location = "https://www.linkedin.com/in/dominiquewehrli/"
 }
 
 function kollektion () {
