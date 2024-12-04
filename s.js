@@ -49,8 +49,7 @@ function st () {
 }
 
 function osm () {
-  var q = prompt('Open Street Map:').replace(/ +$/, ""); 
-  if (q) { document.location = "https://www.openstreetmap.org/search?query=" + q }
+  document.location = "https://www.openstreetmap.org/#map=14/47.55698/8.89532"
 }
 
 function lin () {
