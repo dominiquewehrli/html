@@ -40,12 +40,12 @@ function bg () {
   if (q) { document.location = "https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?lang=de&type=simple_query&query_words=" + q }
 }
 
-function map () {
-  document.location = "https://s.geo.admin.ch/unoha5jgibb1"
-}
-
 function st () {
   document.location = "https://www.swisstransfer.com/de-ch"
+}
+
+function map () {
+  document.location = "https://s.geo.admin.ch/6jids9n0nx9u"
 }
 
 function osm () {
