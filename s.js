@@ -13,7 +13,7 @@ document.onkeydown = function (e) {
 }
 
 function sr () {
-  var q = prompt('Bundesrecht: \nErlass Artikel (z.B. BV 75) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, ""); 
+  var q = prompt('Bundesrecht: \nErlass Artikel [Absatz] (z.B. BV 75 II) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, ""); 
   if (q) { document.location = "https://www.fedlex.admin.ch/de/search?collection=classified_compilation&classifiedBy=" + q }
 }
 
