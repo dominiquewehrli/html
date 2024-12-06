@@ -1,6 +1,5 @@
 document.onkeydown = function (e) {
   if (!e) e = window.event;
-  // if (e.key == 's') { if (s == "") { s = "/sr" } }
   if (e.key == 's') { sr() }
   if (e.key == 'r') { rb() }
   if (e.key == 'e') { es() }
