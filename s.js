@@ -9,6 +9,7 @@ document.onkeydown = function (e) {
   if (e.key == 'i') { lin() }
   if (e.key == 't') { st() }
   if (e.key == 'k') { kollektion() }
+  if (e.key == 'h') { edit() }
 }
 
 function sr () {
@@ -57,4 +58,8 @@ function lin () {
 
 function kollektion () {
   document.location = "/kollektion"
+}
+
+function edit () {
+  document.location = "https://github.com/dominiquewehrli/html"
 }
