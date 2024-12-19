@@ -19,7 +19,8 @@ function sr () {
 
 function rb () {
   var q = prompt('Rechtsbuch TG: \nErlass Artikel (z.B. PBG 17) oder Erlassnummer Artikel (z.B. 700 17). Erlassbezeichnungen werden fortlaufend ergaenzt.').toLowerCase().replace(/ +$/, ""); 
-  q = q.replace("kv", "101").replace("gemg", "131.1").replace("eg zgb", "210.1").replace("archivg", "432.10").replace("eng", "731.1").replace("tg dsg", "170.7").replace("dsg", "170.7").replace("rsv", "177.112");
+  q = q.replace("kv", "101").replace("gemg", "131.1").replace("eg zgb", "210.1").replace("archivg", "432.10").replace("eng", "731.1");
+  q = q.replace("tg dsg", "170.7").replace("dsg", "170.7").replace("rsv", "177.112");
   q = q.replace("vrg", "170.1").replace("öffg", "170.6").replace("dsv", "170.71").replace("vgv","631.1");
   q = q.replace("pbg", "700").replace("pbv", "700.1").replace("ivhb", "700.2").replace("ksv", "700.3").replace("flgg", "913.1");
   q = q.replace("tg nhg", "450.1").replace("tg nhv", "450.11").replace("nhg", "450.1").replace("nhv", "450.11").replace("usgv", "814.03");
@@ -31,7 +32,9 @@ function rb () {
 }
 
 function es () {
-  var q = prompt('Entscheidsuche: \nErlass Artikel [Absatz] (z.B. BGB 75 II).').toUpperCase().replace(" V", " Abs. 5").replace(" IV", " Abs. 4").replace(" III", " Abs. 3").replace(" II", " Abs. 2").replace(" I", " Abs. 1").replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "").replace(/([A-Za-z]+) ([0-9a-z]+)( Abs. [0-9])?/, "\"Art. $2$3\" AND \"$2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); 
+  var q = prompt('Entscheidsuche: \nErlass Artikel [Absatz] (z.B. BGB 75 II).').toUpperCase().replace(" V", " Abs. 5").replace(" IV", " Abs. 4");
+  q = q.replace(" III", " Abs. 3").replace(" II", " Abs. 2").replace(" I", " Abs. 1").replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "");
+  q = q.replace(/([A-Za-z]+) ([0-9a-z]+)( Abs. [0-9])?/, "\"Art. $2$3\" AND \"$2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); 
   if (q) { document.location = "https://entscheidsuche.ch/search?query=" + q }
 }
 
