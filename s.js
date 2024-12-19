@@ -13,7 +13,7 @@ document.onkeydown = function (e) {
 }
 
 function sr () {
-  var q = prompt('Bundesrecht: \nErlass Artikel [Absatz] (z.B. BV 75 II) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, ""); 
+  var q = prompt('Bundesrecht: \nErlass Artikel [Absatz] (z.B. BV 75) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, ""); 
   if (q) { document.location = "https://www.fedlex.admin.ch/de/search?collection=classified_compilation&classifiedBy=" + q }
 }
 
@@ -31,7 +31,7 @@ function rb () {
 }
 
 function es () {
-  var q = prompt('Entscheidsuche: \nErlass Artikel (z.B. BGB 75).').toUpperCase().replace(" V", " Abs. 5").replace(" IV", " Abs. 4").replace(" III", " Abs. 3").replace(" II", " Abs. 2").replace(" I", " Abs. 1").replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "").replace(/([A-Za-z]+) ([0-9a-z]+)( Abs. [0-9])?/, "\"Art. $2$3\" AND \"$2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); 
+  var q = prompt('Entscheidsuche: \nErlass Artikel (z.B. BGB 75 II).').toUpperCase().replace(" V", " Abs. 5").replace(" IV", " Abs. 4").replace(" III", " Abs. 3").replace(" II", " Abs. 2").replace(" I", " Abs. 1").replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "").replace(/([A-Za-z]+) ([0-9a-z]+)( Abs. [0-9])?/, "\"Art. $2$3\" AND \"$2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); 
   if (q) { document.location = "https://entscheidsuche.ch/search?query=" + q }
 }
 
