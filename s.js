@@ -18,7 +18,7 @@ function sr () {
 }
 
 function rb () {
-  var q = prompt('Rechtsbuch TG: \nErlass Artikel (z.B. PBG 17) oder Erlassnummer Artikel (z.B. 700 17). Erlassbezeichnungen werden fortlaufend ergaenzt.').toLowerCase().replace(/ +$/, ""); 
+  var q = prompt('Rechtsbuch TG: \nErlass Artikel (z.B. PBG 17) oder Erlassnummer Artikel (z.B. 700 17). Erlassbezeichnungen werden bei Bedarf ergaenzt.').toLowerCase().replace(/ +$/, ""); 
   q = q.replace("kv", "101").replace("gemg", "131.1").replace("eg zgb", "210.1").replace("archivg", "432.10").replace("eng", "731.1");
   q = q.replace("tg dsg", "170.7").replace("dsg", "170.7").replace("rsv", "177.112");
   q = q.replace("vrg", "170.1").replace("öffg", "170.6").replace("dsv", "170.71").replace("vgv","631.1");
