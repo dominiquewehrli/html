@@ -1,17 +1,3 @@
-document.onkeydown = function (e) {
-  if (!e) e = window.event;
-  if (e.key == 's') { sr() }
-  if (e.key == 'r') { rb() }
-  if (e.key == 'e') { es() }
-  if (e.key == 'b') { bg() }
-  if (e.key == 'm') { map() }
-  if (e.key == 'o') { osm() }
-  if (e.key == 'i') { lin() }
-  if (e.key == 't') { st() }
-  if (e.key == 'k') { kollektion() }
-  if (e.key == ' ') { edit() }
-}
-
 function sr () {
   var q = prompt('Bundesrecht: \nErlass Artikel (z.B. BV 75) oder Erlassnummer Artikel (z.B. 101 75).').toUpperCase().replace(/ +$/, ""); 
   if (q) { document.location = "https://www.fedlex.admin.ch/de/search?collection=classified_compilation&classifiedBy=" + q } else { document.location = "https://www.fedlex.admin.ch" }
