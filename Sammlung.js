@@ -57,7 +57,7 @@ function p(n) { //Projektbilder
 		//history.pushState(stateObj, "", "collection.html?"+pn);
 		if (xhr.status != 404) // xhr.responseText.search('404') == -1
 			{ document.getElementById('t1').innerHTML = xhr.responseText; document.getElementById('t2').innerHTML = xhr.responseText +' &ndash; Atelier Dominique Wehrli'; } else 
-			{ document.getElementById('t1').innerHTML = 'Kollektion 2004–2024'; document.getElementById('t2').innerHTML = 'Kollektion 2004–2024 &ndash; Atelier Dominique Wehrli'}
+			{ document.getElementById('t1').innerHTML = 'Sammlung 2004–2024'; document.getElementById('t2').innerHTML = 'Sammlung 2004–2024 &ndash; Dominique Marc Wehrli'}
 		}}
 	}
 }
