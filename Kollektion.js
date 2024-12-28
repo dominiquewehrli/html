@@ -29,7 +29,7 @@ function p(n) { //Projektbilder
 	// if ((document.referrer.search('contact.html') == -1) && (n != 0))
 	if ((document.referrer.search('contact.html') == -1) && (n != 0))
 		{ 	//document.location.href="/"
-			if (n < 0) { document.location.href="https://dominiquewehrli.ch/contact.html" }
+			if (n < 0) { document.location.href="https://dominiquewehrli.ch" }
 			else { window.location.reload() }
 			//window.history.back()
 		}
@@ -42,10 +42,10 @@ function p(n) { //Projektbilder
 		if (cntp < 1) {window.history.back()}
 		
 		pn = ("000"+imgp[cntp-1]).slice(-4);
-		s1 = 'p/' + pn +'.jpg';
+		s1 = '' + pn +'.jpg';
 		document.getElementById('i1').src = s1;
 		
-		ftxt = '/p/' + pn +'.txt';
+		ftxt = '' + pn +'.txt';
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = process;
 		xhr.open("GET", ftxt, true);
@@ -63,7 +63,7 @@ function p(n) { //Projektbilder
 }
 
 function t(n) { //Texte
-	if ((document.referrer.search('contact.html') == -1) && (n != 0))
+	if ((document.referrer.search('index.html') == -1) && (n != 0))
 		{ //document.location.href="/"}
 			window.history.back()}
 	else
