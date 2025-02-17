@@ -7,7 +7,7 @@ function rb () {
   var q = prompt('Rechtsbuch TG: \nErlass Artikel (z.B. PBG 17) oder Erlassnummer Artikel (z.B. 700 17). Erlassbezeichnungen werden bei Bedarf ergaenzt.').toLowerCase().replace(/ +$/, ""); 
   q = q.replace("kv", "101").replace("gemg", "131.1").replace("eg zgb", "210.1").replace("archivg", "432.10").replace("eng", "731.1");
   q = q.replace("tg dsg", "170.7").replace("dsg", "170.7").replace("rsv", "177.112").replace("geoig", "211.441").replace("geoiv", "211.442");
-  q = q.replace("vrg", "170.1").replace("öffg", "170.6").replace("dsv", "170.71").replace("vgv","631.1");
+  q = q.replace("vrg", "170.1").replace("öffg", "170.6").replace("dsv", "170.71").replace("vgv","631.1").replace("tg entg","710").replace("entg","710");
   q = q.replace("pbg", "700").replace("pbv", "700.1").replace("ivhb", "700.2").replace("ksv", "700.3").replace("flgg", "913.1").replace("flurg", "913.1");
   q = q.replace("tg nhg", "450.1").replace("tg nhv", "450.11").replace("nhg", "450.1").replace("nhv", "450.11").replace("usgv", "814.03");
   q = q.replace("tg waldg", "921.1").replace("tg waldv", "921.11").replace("waldg", "921.1").replace("waldv", "921.11");
