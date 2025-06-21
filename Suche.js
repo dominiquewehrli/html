@@ -49,6 +49,10 @@ function kollektion () {
   document.location = "/kollektion"
 }
 
+function meteo () {
+  document.location = "https://www.meteoschweiz.admin.ch/lokalprognose/frauenfeld/8500.html#forecast-tab=detail-view"
+}
+
 function edit () {
   document.location = "https://github.com/dominiquewehrli/html"
 }
