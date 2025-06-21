@@ -9,5 +9,6 @@ document.onkeydown = function (e) {
   if (e.key == 'i') { lin() }
   if (e.key == 't') { st() }
   if (e.key == 'k') { kollektion() }
+  if (e.key == 'w') { meteo() }
   if (e.key == ' ') { edit() }
 }
