@@ -26,7 +26,8 @@ function es () {
 
 function bg () {
   var q = prompt('Bundesgericht: \nUrteil des BGer (z.B. 1C_483/2021).').replace(" ", "_").replace(" ", "/"); 
-  if (q) { document.location = "https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?lang=de&type=simple_query&query_words=" + q } else { document.location = "https://bger.ch" }
+  // if (q) { document.location = "https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?lang=de&type=simple_query&query_words=" + q } else { document.location = "https://bger.ch" }
+  if (q) { document.location = "https://search.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?lang=de&type=simple_query&query_words=" + q } else { document.location = "https://bger.ch" }
 }
 
 function st () {
