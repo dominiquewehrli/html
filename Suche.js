@@ -18,15 +18,19 @@ function rb () {
 }
 
 function es () {
-  var p = 0;
   var q = prompt('Entscheidsuche: \nErlass Artikel [Absatz] (z.B. BV 75 II).');
-  if (q.indexOf(" d")) { q = q.replace(" d",""); p = 1 };
   q = q.toUpperCase().replace(" V", " Abs. 5").replace(" IV", " Abs. 4");
   q = q.replace(" III", " Abs. 3").replace(" II", " Abs. 2").replace(" I", " Abs. 1").replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "");
   q = q.replace(/([A-Za-z]+) ([0-9A-Z]+)( Abs. [0-9])?/, "\"Art. $2$3\" AND \"Art. $2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); 
-  if (q) { 
-    if (p==1) { document.location = "https://entscheidsuche.ch/search?query=" + q +"&sort=date"} else { document.location = "https://entscheidsuche.ch/search?query=" + q }
-  } else { document.location = "https://entscheidsuche.ch" }
+  if (q) { document.location = "https://entscheidsuche.ch/search?query=" + q } else { document.location = "https://entscheidsuche.ch" }
+}
+
+function esd () {
+  var q = prompt('Entscheidsuche: \nErlass Artikel [Absatz] (z.B. BV 75 II).');
+  q = q.toUpperCase().replace(" V", " Abs. 5").replace(" IV", " Abs. 4");
+  q = q.replace(" III", " Abs. 3").replace(" II", " Abs. 2").replace(" I", " Abs. 1").replace(/([0-9]) ([0-9])/, "$1~$2").replace(/ +$/, "");
+  q = q.replace(/([A-Za-z]+) ([0-9A-Z]+)( Abs. [0-9])?/, "\"Art. $2$3\" AND \"Art. $2 $1\"~5").replace(/([0-9])~([0-9])/, "$2"); 
+  if (q) { document.location = "https://entscheidsuche.ch/search?query=" + q +"&sort=date" } else { document.location = "https://entscheidsuche.ch" }
 }
 
 function bg () {
