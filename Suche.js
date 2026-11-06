@@ -18,6 +18,7 @@ function rb () {
 }
 
 function es () {
+  var p = 0;
   var q = prompt('Entscheidsuche: \nErlass Artikel [Absatz] (z.B. BV 75 II).');
   if (q.indexOf(" d")) { q = q.replace(" d",""); p = 1 };
   q = q.toUpperCase().replace(" V", " Abs. 5").replace(" IV", " Abs. 4");
